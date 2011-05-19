@@ -1,0 +1,30 @@
+<html>
+<head></head>
+<body>
+ <h1><%= @post.first.title %></h1>
+ <p>
+ <%= @post.first.postbody %><br /><br />
+ <i><small><%= @post.first.author %> at <%= @post.first.created_at %></small></i>
+ </p>
+ <% form_tag(:controller => "blog", :action => "comment", :postid => @post.first.id) do -%>
+ Имя: <br />
+ <%= text_field_tag :name%>
+ <br />
+ Сообщение: <br />
+ <%= text_field_tag :bodycomment%>
+ <br />
+ <%= submit_tag "Прокомментировать" %>
+ <% end -%>
+ <hr/>
+ <% if @comm != nil %>
+ <% for com in @comm -%>
+ <p>
+ <b><%= com.name %><br /></b>
+ <%= com.bodycomment %><br />
+ <i><small>at <%= com.created_at %></small></i>
+ </p>
+ <% end %>
+ <% end %>
+ <hr />
+ </body>
+</html>
