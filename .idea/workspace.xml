@@ -60,10 +60,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="103" selection-start="2128" selection-end="2128" vertical-scroll-proportion="0.8597701">
+            <state line="17" column="11" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.rhtml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/blog/index.rhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="38" selection-start="123" selection-end="123" vertical-scroll-proportion="0.12085308">
               <folding />
             </state>
           </provider>
@@ -123,13 +132,13 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/views/blog/calc.rhtml" />
-        <option value="$PROJECT_DIR$/app/views/blog/index.rhtml" />
         <option value="$PROJECT_DIR$/app/controllers/blog_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/blog/posts.rhtml" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/views/blog/post.rhtml" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/blog/index.rhtml" />
       </list>
     </option>
   </component>
@@ -712,7 +721,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="103" selection-start="2128" selection-end="2128" vertical-scroll-proportion="0.8597701">
+        <state line="17" column="11" selection-start="966" selection-end="966" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blog/index.rhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="123" selection-end="123" vertical-scroll-proportion="0.12085308">
           <folding />
         </state>
       </provider>
