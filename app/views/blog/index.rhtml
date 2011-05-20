@@ -19,7 +19,7 @@
  Something wrong:(
  <hr/>
  <% for post in @pos -%>
- <h3><a href = 'http://myfb.heroku.com/blog/post/<%= post.id %>'><%= post.title %></a></h3>
+ <h3><a href = 'http://localhost:3000/blog/post/<%= post.id %>'><%= post.title %></a></h3>
  <p>
  <%= post.postbody %> <br/><br/>
  <i><small><%= post.author %> at <%= post.created_at %></small></i>
