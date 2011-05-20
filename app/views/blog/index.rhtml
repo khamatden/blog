@@ -1,15 +1,30 @@
 <html>
-<head></head>
+<head>
+  <%= javascript_include_tag :defaults %>
+</head>
 <body>
  <h1>Here's blog: </h1>
  <hr />
+ <% form_tag(:controller => 'blog', :action => 'create') do -%>
+ Имя: <br />
+ <%= text_field_tag :author %><br />
+ Тема: <br />
+ <%= text_field_tag :title %>
+ <br />
+ Пост: <br />
+ <%= text_field_tag :postbody %>
+ <br />
+ <%= submit_tag 'Edit' %>
+ <% end -%>
+ Something wrong:(
+ <hr/>
  <% for post in @pos -%>
- <h3><a href = 'http://MyFB.heroku.com/blog/post/<%= post.id %>'><%= post.title %></a></h3>
+ <h3><a href = 'http://myfb.heroku.com/blog/post/<%= post.id %>'><%= post.title %></a></h3>
  <p>
  <%= post.postbody %> <br/><br/>
  <i><small><%= post.author %> at <%= post.created_at %></small></i>
  </p>
  <hr />
  <% end %>
- </ body>
+ </body>
 </html>

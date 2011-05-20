@@ -1,8 +1,12 @@
 BlogPr::Application.routes.draw do
+  #match 'blog/edit/' => 'blog#edit'
+  match 'blog/edit/:postid' => 'blog#edit#postid'
+  match 'blog/delete' => 'blog#delete'
   match '/' => 'blog#index'
   match 'blog' => 'blog#index'
   match 'blog/post/:id' => 'blog#post#:id'
   match 'blog/comment/:postid' => 'blog#comment#postid'
+  match 'blog/create' => 'blog#create'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
