@@ -22,20 +22,6 @@
 <% end -%>
 
 
- <p>
- <% form_tag(:controller => 'blog', :action => 'edit', :postid => @post.first.id) do -%>
-
- Тема: <br />
- <%= text_field_tag :title %>
- <br />
- Пост: <br />
- <%= text_field_tag :postbody %>
- <br />
- <%= submit_tag 'Edit' %>
- <% end -%>
- </p>
-
-
 
  <hr/>
  <% if @comm != nil %>
