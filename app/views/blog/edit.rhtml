@@ -1,0 +1,20 @@
+<html>
+<head></head>
+<body>
+
+ <p>
+ <% form_tag(:controller => 'blog', :action => 'edit', :postid => @post.first.id) do -%>
+ Имя: <br />
+ <%= text_field_tag :author %><br />
+ Тема: <br />
+ <%= text_field_tag :title %>
+ <br />
+ Пост: <br />
+ <%= text_field_tag :postbody %>
+ <br />
+ <%= submit_tag 'Создать пост' %>
+ <% end -%>
+ </p>
+ <hr />
+ </body>
+</html>
